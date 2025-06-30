@@ -18,7 +18,6 @@ function GameHomePage() {
       setLoading(true);
       setErreur('');
       const data = await launchGame(gamePoints);
-      console.log(data);
       setGameResults(data);
     } catch (e) {
       setErreur("Erreur lors de la récupération des résultats" + e);
